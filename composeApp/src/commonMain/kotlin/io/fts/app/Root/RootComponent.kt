@@ -3,6 +3,7 @@ package io.fts.app.Root
 import com.arkivanov.decompose.ComponentContext
 import com.arkivanov.decompose.router.stack.StackNavigation
 import kotlinx.serialization.Serializable
+import org.koin.core.component.KoinComponent
 
 class RootComponent(
     componentContext: ComponentContext

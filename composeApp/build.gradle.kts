@@ -47,7 +47,7 @@ kotlin {
             implementation(libs.kotlinx.serialization.json)
             implementation(libs.kotlinx.coroutines.core)
 //            implementation(libs.koin.bom)
-//            implementation(libs.koin.core)
+            implementation(libs.koin.core)
 //            implementation(libs.koin.ktor)
 //            implementation(libs.koin.logger.slf4j)
             implementation(libs.ktor.client.core)
