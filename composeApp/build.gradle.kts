@@ -16,7 +16,7 @@ kotlin {
             jvmTarget.set(JvmTarget.JVM_11)
         }
     }
-    
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -27,9 +27,9 @@ kotlin {
             isStatic = true
         }
     }
-    
+
     sourceSets {
-        
+
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
@@ -46,10 +46,18 @@ kotlin {
             implementation(libs.decompose.jetbrains)
             implementation(libs.kotlinx.serialization.json)
             implementation(libs.kotlinx.coroutines.core)
+//            implementation(libs.koin.bom)
             implementation(libs.koin.core)
-            implementation(libs.koin.ktor)
-            implementation(libs.koin.logger.slf4j)
+//            implementation(libs.koin.ktor)
+//            implementation(libs.koin.logger.slf4j)
             implementation(libs.ktor.client.core)
+            implementation(libs.lifecycle)
+            implementation(libs.state.keeper)
+            implementation(libs.instance.keeper)
+            implementation(libs.back.handler)
+            implementation(libs.mvikotlin)
+            implementation(libs.mvikotlin.main)
+            implementation(libs.mvikotlin.extensions.coroutines)
         }
     }
 }

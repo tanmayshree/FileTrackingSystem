@@ -25,6 +25,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import filetrackingsystem.composeapp.generated.resources.Res
 import filetrackingsystem.composeapp.generated.resources.compose_multiplatform
+import io.ktor.client.HttpClient
 import org.jetbrains.compose.resources.painterResource
 
 @Composable
