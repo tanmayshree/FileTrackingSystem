@@ -33,7 +33,6 @@ fun FTSActionBS(
     textStyle: TextStyle = TextStyle.Default,
     imageResource: Painter = painterResource(Res.drawable.compose_multiplatform)
 ) {
-
     Column(
         modifier = Modifier.fillMaxWidth(),
         verticalArrangement = Arrangement.spacedBy(2.dp)
