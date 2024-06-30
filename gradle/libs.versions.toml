@@ -19,13 +19,19 @@ decompose = "2.2.0-alpha03"
 kotlinxSerializationJson = "1.6.1"
 ktor = "2.3.12"
 coroutines = "1.8.1"
+essenty = "1.1.0"
+mvikotlin = "4.1.0"
 
 [libraries]
+back-handler = { module = "com.arkivanov.essenty:back-handler", version.ref = "essenty" }
 decompose-jetbrains = { module = "com.arkivanov.decompose:extensions-compose-jetbrains", version.ref = "extensionsComposeJetbrains" }
+instance-keeper = { module = "com.arkivanov.essenty:instance-keeper", version.ref = "essenty" }
+koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koinCore" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koinCore" }
 koin-ktor = { module = "io.insert-koin:koin-ktor", version.ref = "koinCore" }
 koin-logger-slf4j = { module = "io.insert-koin:koin-logger-slf4j", version.ref = "koinCore" }
 ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -39,6 +45,11 @@ androidx-activity-compose = { module = "androidx.activity:activity-compose", ver
 decompose = { module = "com.arkivanov.decompose:decompose", version.ref = "decompose" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+lifecycle = { module = "com.arkivanov.essenty:lifecycle", version.ref = "essenty" }
+mvikotlin = { module = "com.arkivanov.mvikotlin:mvikotlin", version.ref = "mvikotlin" }
+mvikotlin-extensions-coroutines = { module = "com.arkivanov.mvikotlin:mvikotlin-extensions-coroutines", version.ref = "mvikotlin" }
+mvikotlin-main = { module = "com.arkivanov.mvikotlin:mvikotlin-main", version.ref = "mvikotlin" }
+state-keeper = { module = "com.arkivanov.essenty:state-keeper", version.ref = "essenty" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
